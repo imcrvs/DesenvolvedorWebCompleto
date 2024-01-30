@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    padding-top: 80px;
+}
+
+.container{
+    max-width: 1180px;
+    margin: auto;
+    height: 100%;
+    padding: 0 16px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #fff;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,0.15);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    display: inline-block;
+    font-size: 27px;
+}
+
+header .logo .blue_dot{
+    display: inline-block;
+    background-color: #3e50e5;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+header nav{
+    display: inline-block;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a{
+    color: #3e3e3e;
+    font-size: 15px;
+    letter-spacing: 0.37px;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: #3e50e5;
+}
+
+header nav ul li:last-of-type a{
+    margin-right: 0;
+}
+
+section.hero img{
+    width: 100%;
+    height: auto;
+}
+
+section.hero{
+    position: relative;
+}
+
+.hero_content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero_content .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_content h1{
+    max-width: 495px;
+    color: #fff;
+    font-family: Heebo;
+    font-size: 50px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.hero_content p{
+    max-width: 518px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-bottom: 21px;
+    margin-top: 0;
+}
+
+.hero_content button{
+    height: 50px;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 92px;
+    background-color: #3e50e5;
+    color: #fff;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hero_content button:hover{
+    color: #3e50e5;
+    background-color: #fff;
+    border: 1px solid #3e50e5;
+}
+
+section.best_sellers{
+    padding-top: 80px;
+}
+
+section.best_sellers h2{
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 0.85px;
+    line-height: 42px;
+    font-weight: normal;
+    margin: 0 0 14px 0;
+}
+
+section.best_sellers hr{
+    border: none;
+    border-top: 5px solid #67f11d;
+    width: 66px;
+}
+
+section.best_sellers .container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+section.best_sellers .product_slider .product{
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 33%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+section.best_sellers .product_slider .product img{
+    max-width: 100%;
+}
+
+section.best_sellers .product_slider .product.new::before{
+    content: "New";
+    background-color: red;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    text-align: center;
+    padding: 4px 15px;
+    border-radius: 40px;
+    background-color: #ec1c1c;
+}
+
+section.best_sellers .product_slider .product .product_info{
+    margin-top: 50px;
+}
+
+section.best_sellers .product_slider .product .product_info .categories{
+    color: #3e50e5;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+section.best_sellers .product_slider .product .product_info .title{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-bottom: 6px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+section.best_sellers .product_slider .product .product_info .price{
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+section.best_sellers .product_slider .product .product_info .price .discounted_price{
+    color: #ec1c1c;
+}
+
+section.best_sellers .product_slider .product .product_info .price .original_price{
+    color: #9b9b9b;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 30px;
+    text-decoration: line-through;
+}
+
+section.best_sellers .product_slider .product .product_info button{
+    height: 50px;
+    width: 219.5px;
+    border: 1px solid #000;
+    border-radius: 220px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 24px;
+    background-color: white;
+}
+
+section.best_sellers .product_slider .product:hover .product_info button{
+       background-color: #3e50e5;
+       color: #fff;
+       border: 1px solid #3e50e5;
+}
+
+section.newsletter{
+    background-color: rgba(200,200,200,0.18);
+    max-width: 995px;
+    text-align: center;
+    padding: 72px 0;
+    margin: 80px auto;
+}
+
+section.newsletter h3{
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.newsletter p{
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section.newsletter form{
+    display: flex;
+    justify-content: center;
+}
+
+section.newsletter form input{
+    height: 50px;
+    width: 326px;
+    max-width: 80%;
+    box-sizing: border-box;
+    border-radius: 60px 0 0 60px;
+    border: 1px solid #3e3e3e;
+    border-right: none;
+    color: #3e3e3e;
+    font-family: Heebo;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    padding-left: 22px;
+}
+
+section.newsletter form button{
+    height: 50px;
+    width: 326px;
+    max-width: 20%;
+    box-sizing: border-box;
+    border-radius: 0 60px 60px 0;
+    background-color: #3e50e5;
+    border: 1px solid #3e3e3e;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 21px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.newsletter form button:hover{
+    color: #3e50e5;
+    border: 1px solid #3e3e3e;
+    background-color: #fff;
+}
+
+footer .bottom_nav{
+    padding: 60px;
+    background-color: #3e3e3e;
+}
+
+footer .bottom_nav .container{
+    max-width: 955px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .bottom_nav ul{
+    list-style: none;
+}
+
+footer .bottom_nav .container ul li a{
+    color: #e0e0e0;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+footer .bottom_nav .container ul li a:hover{
+    color: #3e50e5;
+}
+
+footer .bottom_nav .container ul .list_tittle{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+footer .copyright_text{
+    color: white;
+    background-color: #2b2b2b;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+}
