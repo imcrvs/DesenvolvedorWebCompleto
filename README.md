@@ -1,1 +1,1 @@
-Repositório do curso de desenvolvimento web que estou fazendo
+- Primeiro projeto do curso: Desenvolvedor Web Completo: HTML, CSS, Javascript, Vue e Git
