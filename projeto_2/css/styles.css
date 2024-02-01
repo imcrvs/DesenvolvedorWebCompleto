@@ -4,8 +4,9 @@ body{
     padding-top: 80px;
 }
 
-.container{
-    max-width: 1180px;
+body .container{
+    width: 1440px;
+    max-width: 90%;
     margin: auto;
     height: 100%;
     padding: 0 16px;
@@ -54,8 +55,14 @@ header nav{
 
 header nav ul li{
     display: inline-block;
-    margin: 0;
-    padding: 0;
+}
+
+header nav ul li.menu_icon{
+    display: none;
+}
+
+header nav ul li.menu_icon img{
+    vertical-align: middle;
 }
 
 header nav ul li a{
@@ -387,3 +394,58 @@ footer .copyright_text{
     letter-spacing: 0.4px;
     line-height: 22px;
 }
+
+/* ********************************************
+********** CSS MEDIA QUERIES ******************
+******************************************** */
+
+/* Início Design de Small desktop */
+@media screen and (max-width: 1440px){
+
+    body{
+        padding-top: 70px;
+    }
+
+    header{
+        height: 70px;
+    }
+    
+    body .container{
+        width: 11800px;
+        max-width: 90%;
+    }
+    
+}
+/* Final Design de Small desktop */
+
+/* Inicio Design de tablet */
+@media screen and (max-width: 960px){
+
+    body .container{
+        width: 92%;
+    }
+    
+    header .logo{
+        font-size: 24px;
+    }
+
+    header nav ul li{
+        display: none;
+    }
+    
+    header nav ul li.menu_icon{
+        display: inline-block;
+    }
+
+}
+
+/* Final Design de tablet */
+
+/* Início Desing mobile */
+@media screen and (max-width: 576px){
+
+    body .container{
+    }
+    
+}
+/* Final Desing mobile */ 
